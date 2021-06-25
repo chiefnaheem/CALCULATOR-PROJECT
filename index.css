@@ -1,0 +1,208 @@
+body {
+    background-color: white;
+}
+span, div {
+    color: #08070B;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+button {
+    border: 1px solid whitesmoke;
+    padding: 22px;
+    border-radius: 35%;
+    /* width: 90%; */
+    /* height: 90%; */
+    background-color: rgb(75, 72, 72);
+    transition: background-color .5s linear;
+}
+button:hover {
+    background-color: whitesmoke;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 40% 60%;
+    border-radius: 18px;
+    background-color: black;
+}
+.resultContainer {
+    display: flex;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+    flex-direction: column;
+    padding: 3px;
+    background-color: black;
+    border-radius: 17px 17px 17px 17px;
+}
+.result, .icons {
+    padding: 30px;
+}
+.value {
+    padding: 3px;
+}
+.value > span {
+    cursor: auto;
+    color: white;
+    font-size: 2.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 700;
+}
+.result > span {
+    color: rgb(204, 142, 27);
+    font-family : Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 2.0em;
+}
+.digitContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    background-color: black;
+} 
+.numberContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    flex: auto;
+    grid-template-areas: "top top side" "center center side" "center center side";
+    grid-template-rows: 20% auto 10%;;
+}
+.centerElements > button {
+    color: white;
+    font-size: 2.0em;
+}
+.topElements > button, .rightElements > button {
+    color: rgb(204, 142, 27);
+    font-size: 2.0em;
+}
+.topElements {
+    display: grid;
+    grid-area: top;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.centerElements {
+    display: grid;
+    grid-area: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.rightElements {
+    display: grid;
+    grid-area: side;
+    grid-template-columns: 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.rightElements > button:hover:nth-last-child(1) {
+    background: rgb(3, 90, 124);
+}
+.rightElements > button:nth-last-child(1) {
+    background-color: rgb(204, 142, 27);
+    color: white !important;
+    width: auto;
+    height: auto;
+    border-radius: 17px 17px 17px 17px;
+}
+button {
+    font-size: 1.3rem;
+    margin: 15px;
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100%;
+        align-items: center;
+    }
+    .container{
+        background-color: #FDFDFD;
+        grid-column: 2/-2;
+        height: 90%;
+    }
+}
+@media only screen and (min-width: 500px) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100%;
+        align-items: center;
+    }
+    .container{
+        background-color: #FDFDFD;
+        grid-column: 3/-3;
+        height: 90%;
+    }
+}
+@media only screen and (min-width: 767px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100%;
+        align-items: center;
+    }
+    .container{
+        background-color: #FDFDFD;
+        grid-column: 4/-4;
+        height: 90%;
+    }
+}
+@media only screen and (min-width:964px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100%;
+        align-items: center;
+    }
+    .container{
+        background-color: #FDFDFD;
+        grid-column: 5/-5;
+        height: 90%;
+    }
+}
+@media only screen and (min-width:1200px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(36, 1fr);
+        grid-template-rows: 100%;
+        align-items: center;
+    }
+    .container{
+        background-color: #FDFDFD;
+        grid-column: 14/-14;
+        height: 90%;
+    }
+}
+.historyIcon {
+    position: relative;
+    left: -270px;
+    color: white;
+}
+.conversionIcon {
+    position: absolute;
+    left: 680px;
+    color: white;
+}
+.backspaceIcon {
+    color: white;
+}
+/* .icons::after{
+    width: 100%;
+    height: 1px;
+    background-color: paleturquoise;
+    content: "";
+    bottom: 0;
+} */

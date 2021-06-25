@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR PROJECT</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="resultContainer">
+            <div class="value">
+                <span class="display">0</span>
+            </div>
+            <div class="result">
+                <span class="display">0</span>
+            </div>
+            <div class="icons">
+                <span class="historyIcon"><i class="fa fa-history" aria-hidden="true"></i> </span>
+                <span class="conversionIcon"><i class="fas fa-ruler"></i></span>
+                <span class="backspaceIcon"><i class="fas fa-backspace"></i></span>
+            </div>
+        </div>
+        <div class="digitContainer">
+            <div class="numberContainer">
+                <div class="topElements">
+                    <button data-action="clear">C</button>
+                    <button data-action="parenthesis"> &#40;&#41; </button>
+                    <button data-action="percentage"> &percnt; </button>
+                </div>
+                <div class="centerElements">
+                    <button class="numbers">7</button>
+                    <button class="numbers">8</button>
+                    <button class="numbers">9</button>
+                    <button class="numbers">4</button>
+                    <button class="numbers">5</button>
+                    <button class="numbers">6</button>
+                    <button class="numbers">1</button>
+                    <button class="numbers">2</button>
+                    <button class="numbers">3</button>
+                    <button class="munusPlus"> &PlusMinus; </button>
+                    <button class="zero">0</button>
+                    <button class="decimal">.</button>
+                </div>
+                <div class="rightElements">
+                    <button class="divide"> &divide; </button>
+                    <button class="multiply"> &times; </button>
+                    <button class="minus"> &minus; </button>
+                    <button class="add"> &plus; </button>
+                    <button class="equals"> &equals; </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
